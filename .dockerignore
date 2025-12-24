@@ -1,0 +1,6 @@
+target/
+.git/
+.gitignore
+.devcontainer/
+node_modules/
+README.md
