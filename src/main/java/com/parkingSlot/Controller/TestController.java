@@ -13,15 +13,15 @@ public class TestController {
     /*
         http://localhost:8080/Testing/{id}
      */
-    @GetMapping("/Testing/{id}")
+    @GetMapping("/{id}")
     public String testController(@PathVariable("id") int id) {
-        return String.format("For Testing Only %d....", id);
+        return String.format("Pakyu ng madami mga %d....", id);
     }
     
     /*
         http://localhost:8080/Testing?keyword={keyword}
      */
-    @GetMapping("/Testing")  
+    @GetMapping("/param")  
     public String testController(@RequestParam(name = "keyword", defaultValue = "none") String keyword) {
         return String.format("For Testing Only %s", keyword);
     }
